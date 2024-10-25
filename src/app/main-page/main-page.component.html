@@ -1,0 +1,330 @@
+<div class="container-fluid">
+  <div class="row r1 p-1">
+    <div class="col-sm-6">
+      <i
+        class="bi bi-twitter twitter-icon"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        title="Follow us on Twitter"
+      ></i>
+      &nbsp; &nbsp; &nbsp;
+
+      <i
+        class="bi bi-instagram instagram-icon"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        title="Follow us on Instagram"
+      ></i
+      >&nbsp; &nbsp; &nbsp;
+      <i
+        class="bi bi-facebook facebook-icon"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        title="Follow us on Facebook"
+      ></i
+      >&nbsp; &nbsp; &nbsp;
+      <i
+        class="bi bi-youtube youtube-icon"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        title="Follow us on youtube"
+      ></i
+      >&nbsp; &nbsp; &nbsp;
+    </div>
+    <div class="col-sm-6">
+      <p class="text-end">
+        Group of Compaines<span><i class="bi bi-caret-down-fill"></i></span>
+      </p>
+    </div>
+  </div>
+  <div class="row p-2 bg-white sticky-top">
+    <div class="col-sm-6 d-flex justify-content-center align-items-center">
+      <img
+        class=""
+        width="60"
+        height="55"
+        src="\assets\Screenshot 2024-10-15 131223.png"
+      />
+      <h3 class="head">Supala</h3>
+    </div>
+    <div class="col-sm-6">
+      <div class="row align-items-center">
+        <div class="d-flex">
+          <button
+            *ngFor="let button of firstRowButtons; let i = index"
+            type="button"
+            class="btn fw-medium my-button"
+            [ngClass]="{ active: activeButtonFirstRow === i }"
+            (click)="setActiveButton(i, 'first')"
+          >
+            {{ button }}
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-flex">
+          <button
+            *ngFor="let button of secondRowButtons; let i = index"
+            type="button"
+            class="btn fw-medium my-button"
+            [ngClass]="{ active: activeButtonSecondRow === i }"
+            (click)="setActiveButton(i, 'second')"
+          >
+            {{ button }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img
+            class="d-block"
+            width="100%"
+            height="450rem"
+            src="\assets\solar1.jpg"
+            alt="frog"
+          />
+          <div class="carousel-caption d-none d-md-block custom-caption">
+            <h5>Solar Project</h5>
+            <p>Ramagundam</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            class="d-block"
+            width="100%"
+            height="450rem"
+            src="\assets\road.jpg"
+            alt=""
+          />
+          <div class="carousel-caption d-none d-md-block custom-caption">
+            <h5>Road Tunnel</h5>
+            <p>Araku</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block"
+            width="100%"
+            height="450rem"
+            src="\assets\powerplant.jpeg"
+            alt=""
+          />
+          <div class="carousel-caption d-none d-md-block custom-caption">
+            <h5>Power Plant</h5>
+            <p>Godhavarikani</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block"
+            width="100%"
+            height="450rem"
+            src="\assets\work.jpg"
+            alt=""
+          />
+          <div class="carousel-caption d-none d-md-block custom-caption">
+            <h5>Bridge constrution</h5>
+            <p>Hyderabad</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="row r1 text-center">
+    <h2 class="fw-semibold mt-2">Touching Lives Through Engineering</h2>
+
+    <div class="col-sm-2 mt-3 mb-1">
+      <i class="fa-solid fa-seedling"></i>
+      <p>Irrigation</p>
+    </div>
+    <div class="col-sm-2 mt-3 mb-1">
+      <i class="bi bi-bus-front"></i>
+      <p>Transport</p>
+    </div>
+    <div class="col-sm-2 mt-3 mb-1">
+      <i class="fas fa-chart-area"></i>
+      <p>R&WS</p>
+    </div>
+    <div class="col-sm-2 mt-3 mb-1">
+      <i class="fas fa-chart-area"></i>
+      <p>Panchayat Raj</p>
+    </div>
+    <div class="col-sm-2 mt-3 mb-1">
+      <i class="bi bi-signpost-fill"></i>
+      <p>Roads</p>
+    </div>
+    <div class="col-sm-2 mt-3 mb-1">
+      <i class="bi bi-building-fill"></i>
+      <p>Buildings</p>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <h2 class="text-center">Latest Happenings</h2>
+    <div class="col-sm-4">
+      <div class="card card-custom rounded mb-1">
+        <img
+          src="\assets\procalane.avif"
+          class="card-img-top card-img-custom"
+          alt="green iguana"
+        />
+        <div class="card-body">
+          <h3 class="ctext">Mud Road Construction</h3>
+          <p class="card-text">
+            Mud roads, often rural or temporary, are essential for connecting
+            remote areas. These roads are generally made with minimal
+            preparation and materials, often utilizing the natural terrain.
+            Typically consist of compacted earth, gravel, and local aggregates.
+          </p>
+          <p class="mt-5 fw-bold ctext">See more</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card card-custom rounded mb-1">
+        <img
+          src="\assets\road-con.avif"
+          class="card-img-top card-img-custom"
+          alt="green iguana"
+        />
+        <div class="card-body">
+          <h3 class="ctext">Highway Road Construction</h3>
+          <p class="card-text">
+            Highways are engineered for high-speed, long-distance travel, and
+            must be designed for durability, safety, and efficient traffic flow.
+            Use of multiple layers including sub-base (sand, gravel), base
+            course (crushed stone or asphalt), and surface course (concrete or
+            asphalt).
+          </p>
+          <p class="mt-5 fw-bold ctext">See more</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card card-custom rounded mb-1">
+        <img
+          src="\assets\pipes.jpg"
+          class="card-img-top card-img-custom"
+          alt="green iguana"
+        />
+        <div class="card-body">
+          <h3 class="ctext">Pipeline Construction</h3>
+          <p class="card-text">
+            Pipelines are used for transporting fluids like water, oil, and gas
+            over long distances, requiring careful planning to ensure safety and
+            efficiency. Typically steel, PVC, or high-density polyethylene
+            (HDPE) pipes depending on the material being transported.
+          </p>
+          <p class="mt-5 fw-bold ctext">See more</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row r1 text-center">
+    <div class="col-sm-2 mb-1 mt-3">
+      <i class="bi bi-mortarboard-fill"><span>Careers</span></i>
+    </div>
+    <div class="col-sm-2 mb-1 mt-3">
+      <i class="bi bi-linkedin"><span>Linkedin</span></i>
+    </div>
+    <div class="col-sm-2 mb-1 mt-3">
+      <i class="bi bi-twitter twitter-icon"><span>Twitter</span></i>
+    </div>
+    <div class="col-sm-2 mb-1 mt-3">
+      <i class="bi bi-youtube youtube-icon"><span>Youtube</span></i>
+    </div>
+    <div class="col-sm-2 mb-1 mt-3">
+      <i class="bi bi-facebook facebook-icon"><span>Facebook</span></i>
+    </div>
+    <div class="col-sm-2 mb-1 mt-3">
+      <i class="bi bi-instagram instagram-icon"><span>Instagram</span></i>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-sm-10 m-auto ps-2 pe-2">
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            class="rounded"
+            width="250"
+            height="300"
+            src="\assets\comm.jpg"
+          />
+        </div>
+        <div class="col-sm-8">
+          <h2 class="fff">Our Commitment</h2>
+          <p class="lh-base commitment-text">
+            At MEIL, we are dedicated to shaping a better world through
+            innovation, expertise, and unwavering commitment. Our team of
+            passionate engineers, architects, and experts is driven by a shared
+            vision of transforming ideas into reality, fostering growth, and
+            leaving a positive impact. Transparency, safety, and environmental
+            stewardship are at the heart of our operations.
+          </p>
+
+          <p class="mt-2 lh-base commitment-text">
+            We pledge to engage in open communication with our clients,
+            prioritise the well-being of our employees, and uphold the highest
+            standards of safety. Moreover, we are dedicated to reducing our
+            environmental footprint and integrating sustainable practices into
+            our work. For us, commitment is more than a word. It is the driving
+            force behind every endeavour, ensuring a better today and a brighter
+            tomorrow for all.
+          </p>
+          <div class="row mt-3 lrow">
+            <div class="col-sm-3 ree">
+              <img class="" width="100" height="100" src="\assets\Safety.png">
+              <h5>Safety</h5>
+            </div>
+            <div class="col-sm-3 ree">
+              <img class="" width="100" height="100" src="\assets\Quality.png">
+              <h5>Quality</h5>
+            </div>
+            <div class="col-sm-3 ree">
+              <img class="" width="100" height="100" src="\assets\Accountability.png">
+              <h5>Accountability</h5>
+            </div>
+            <div class="col-sm-3 ree">
+              <img class="" width="100" height="100" src="\assets\Commitment.png">
+              <h5>Commitment</h5>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  <div class="row mt-5 footer">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+  </div>
+</div>

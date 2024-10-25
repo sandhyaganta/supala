@@ -1,0 +1,146 @@
+.r1{
+    background-color:rgb(3, 3, 132);
+    color: #FFFFFF;
+}
+.head{
+    color: #0562ed;
+}
+.twitter-icon {
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+    color: inherit; /* Keeps the original icon color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.twitter-icon:hover {
+    background-color: white;
+    color: black;
+    padding: 5px; /* Adds some padding to create the square shape */
+    border-radius: 10px;
+}
+.instagram-icon {
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+    color: inherit; /* Keeps the original icon color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.instagram-icon:hover {
+    background-color: white;
+    color: rgb(71, 71, 245);
+    padding: 5px; /* Adds some padding to create the square shape */
+    border-radius: 10px;
+}
+.facebook-icon {
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+    color: inherit; /* Keeps the original icon color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.facebook-icon:hover {
+    background-color: white;
+    color: rgb(71, 71, 245);
+    padding: 5px; /* Adds some padding to create the square shape */
+    border-radius: 10px;
+}
+.youtube-icon {
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+    color: inherit; /* Keeps the original icon color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.youtube-icon:hover {
+    background-color: white;
+    color: red;
+    padding: 5px; /* Adds some padding to create the square shape */
+    border-radius: 10px;
+}
+ .my-button {
+    cursor: pointer;
+    background-color: none;
+    border: none;   
+  } 
+  
+  .my-button.active {
+   color: #FFc300;
+  
+  }
+  .custom-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px 20px; /* Padding around the caption */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1.2rem; /* Adjust the font size */
+    color: #fff; /* White text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for better visibility */
+    position: absolute; /* Position the caption */
+    bottom: 20px; /* 20px from the bottom of the image */
+    left: 50%; /* Center the caption horizontally */
+    transform: translateX(-50%); /* Adjust positioning for centering */
+    max-width: 80%; /* Max width to prevent the text from stretching too wide */
+    text-align: center; /* Center-align the text */
+  }
+  
+  .custom-caption h5 {
+    font-size: 1.5rem; /* Font size for image name */
+    font-weight: bold; /* Make the image name bold */
+  }
+  
+  .custom-caption p {
+    font-size: 1rem; /* Font size for the description */
+    margin-top: 5px; /* Space between the name and the description */
+  }
+  .card-img-custom {
+    height: 280px; /* Adjust the height as per your design */
+    object-fit: cover; /* Ensures the image scales and fills the area */
+    width: 100%; /* Ensures the width takes up full card width */
+   
+  }
+  .card-custom {
+    background-image: linear-gradient(140.5deg,rgb(240,225,247)9.33%,#cddef9 58.45%);
+    border-radius: 10px; /* Optional: Adds rounded corners to the cards */
+    
+  }
+  .ctext{
+    color: #2F3192;
+  }
+  .commitment-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+.commitment-text:first-of-type {
+    text-indent: 1.5em;
+}
+.fff{
+  font-size: 1.75em;
+  color: #343a40;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.lrow{
+  display: flex;
+  justify-content: space-around;
+  animation: slightMoveLeft 3s ease-in-out infinite alternate;
+}
+@keyframes slightMoveLeft {
+  0% {
+    transform: translateX(11px); /* Starts slightly to the right */
+  }
+  100% {
+    transform: translateX(1); /* Moves to the left slightly */
+  }
+}
+.footer{
+  background-color: #052c65;
+  color:white
+}
+
+
+
+ 
+  
+ 
+  
+
+
